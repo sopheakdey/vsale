@@ -1,35 +1,28 @@
-<?php
-/* @var $this ProductController */
-/* @var $model Product */
-/* @var $form CActiveForm */
-?>
-
-<div class="wide form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'pro_id'); ?>
-		<?php echo $form->textField($model,'pro_id'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'pro_id',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'cat_id'); ?>
-		<?php echo $form->textField($model,'cat_id'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'cat_id',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'sto_id'); ?>
-		<?php echo $form->textField($model,'sto_id'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'item',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<?php echo $form->textFieldRow($model,'qty',array('class'=>'span5')); ?>
+
+	<?php echo $form->textFieldRow($model,'unit_price',array('class'=>'span5')); ?>
+
+	<?php echo $form->textFieldRow($model,'photo',array('class'=>'span5','maxlength'=>255)); ?>
+
+	<?php echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>
+
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>'Search',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- search-form -->

@@ -6,12 +6,15 @@
  * The followings are the available columns in table 'tbl_product':
  * @property integer $pro_id
  * @property integer $cat_id
- * @property integer $sto_id
+ * @property string $item
+ * @property double $qty
+ * @property double $unit_price
+ * @property string $photo
+ * @property integer $status
  *
  * The followings are the available model relations:
  * @property TblOrder[] $tblOrders
  * @property TblCategory $cat
- * @property TblStore $sto
  */
 class Product extends CActiveRecord
 {
@@ -41,12 +44,13 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cat_id, sto_id', 'required'),
-			array('pro_id, cat_id, sto_id', 'numerical', 'integerOnly'=>true),
-                        
+			array('cat_id, item, qty, unit_price, photo', 'required'),
+			array('pro_id, cat_id, status', 'numerical', 'integerOnly'=>true),
+			array('qty, unit_price', 'numerical'),
+			array('item, photo', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('pro_id, cat_id, sto_id', 'safe', 'on'=>'search'),
+			array('pro_id, cat_id, item, qty, unit_price, photo, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,9 +62,8 @@ class Product extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tblOrders' => array(self::HAS_MANY, 'Order', 'pro_id'),
-			'cat' => array(self::BELONGS_TO, 'Category', 'cat_id'),
-			'store' => array(self::BELONGS_TO, 'Store', 'sto_id'),
+			'tblOrders' => array(self::HAS_MANY, 'TblOrder', 'pro_id'),
+			'cat' => array(self::BELONGS_TO, 'TblCategory', 'cat_id'),
 		);
 	}
 
@@ -72,12 +75,13 @@ class Product extends CActiveRecord
 		return array(
 			'pro_id' => 'Pro',
 			'cat_id' => 'Cat',
-			'sto_id' => 'Sto',
-                        'status' => 'status',
+			'item' => 'Item',
+			'qty' => 'Qty',
+			'unit_price' => 'Unit Price',
+			'photo' => 'Photo',
+			'status' => 'Status',
 		);
 	}
-        
-
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -92,14 +96,14 @@ class Product extends CActiveRecord
 
 		$criteria->compare('pro_id',$this->pro_id);
 		$criteria->compare('cat_id',$this->cat_id);
-		$criteria->compare('sto_id',$this->sto_id);
-               
+		$criteria->compare('item',$this->item,true);
+		$criteria->compare('qty',$this->qty);
+		$criteria->compare('unit_price',$this->unit_price);
+		$criteria->compare('photo',$this->photo,true);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
-
-
-        
 }

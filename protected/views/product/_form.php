@@ -1,47 +1,32 @@
-<?php
-/* @var $this ProductController */
-/* @var $model Product */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'product-form',
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'pro_id'); ?>
-		<?php echo $form->textField($model,'pro_id'); ?>
-		<?php echo $form->error($model,'pro_id'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'pro_id',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'cat_id'); ?>
-		<?php echo $form->dropDownList($model,'cat_id', Category::model()->getCategories());  ?>
-		<?php echo $form->error($model,'cat_id'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'cat_id',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'sto_id'); ?>
-		<?php echo $form->dropDownList($model,'sto_id', Store::model()->getProductname()); ?>
-		<?php echo $form->error($model,'sto_id'); ?>
-	</div>
-        <div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->checkbox($model, 'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'item',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<?php echo $form->textFieldRow($model,'qty',array('class'=>'span5')); ?>
+
+	<?php echo $form->textFieldRow($model,'unit_price',array('class'=>'span5')); ?>
+
+	<?php echo $form->textFieldRow($model,'photo',array('class'=>'span5','maxlength'=>255)); ?>
+
+	<?php echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>
+
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>$model->isNewRecord ? 'Create' : 'Save',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->
