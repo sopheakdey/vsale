@@ -253,14 +253,30 @@
 
 <div class="container">
     <div class="row">
-        <?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+        <div class="span3">
+            <?php
 
-	<?php echo $content; ?>
-        
+            $dbC = Yii::app()->db->createCommand("select cat_name from tbl_category");
+            foreach ($dbC->queryAll() as $row) {
+                //now we can access row columns as object properties:
+                $cat=$row['cat_name'];
+                echo $cat . "<br/>" ;
+               
+            }
+
+
+            ?>
+
+        </div>
+        <div class="span9">
+            <?php if(isset($this->breadcrumbs)):?>
+                    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                            'links'=>$this->breadcrumbs,
+                    )); ?><!-- breadcrumbs -->
+            <?php endif?>
+
+            <?php echo $content; ?>
+        </div>
         
     </div>
 </div>
