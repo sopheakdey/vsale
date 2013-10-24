@@ -254,20 +254,29 @@
 <div class="container">
     <div class="row">
         <div class="span3">
+            <div class="pricel">
+             <div class="plist">
             <?php
 
             $dbC = Yii::app()->db->createCommand("select cat_name from tbl_category");
+            
             foreach ($dbC->queryAll() as $row) {
                 //now we can access row columns as object properties:
                 $cat=$row['cat_name'];
-                echo $cat . "<br/>" ;
                
+                echo '<ul>';
+                    echo '<li>';
+                    echo '<a href="#" >';
+                            echo $cat;
+                      echo '</a>';
+                    echo    '</li>';
+                echo '</ul>';
+                
             }
-
-
             ?>
-
         </div>
+        </div>
+             </div>
         <div class="span9">
             <?php if(isset($this->breadcrumbs)):?>
                     <?php $this->widget('zii.widgets.CBreadcrumbs', array(
