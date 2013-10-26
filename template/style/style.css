@@ -2088,3 +2088,16 @@ footer .copy{
 		height: 90px;
 	}
 }
+.product-wrapper ul li{list-style:none;}
+.product-wrapper ul li span{background:#ddd;
+width: 100%;
+display: inline-block;
+padding: 5px 5px;
+margin: 20px 0;
+color: #7E0101;
+text-transform: capitalize;}
+ .btn-inverse a{color:#fff !important;}
+ .btn-inverse {margin: 0 auto;margin: 0 20px 0 35px;}
+.product-wrapper .pic{text-align:center;padding: 10px 0;}
+.product-wrapper .details label{text-align: center;}
+.clear{clear: both;}

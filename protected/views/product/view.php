@@ -1,29 +1,38 @@
 <?php
-$this->breadcrumbs=array(
-	'Products'=>array('index'),
-	$model->pro_id,
-);
 
-$this->menu=array(
-	array('label'=>'List Product','url'=>array('index')),
-	array('label'=>'Create Product','url'=>array('create')),
-	array('label'=>'Update Product','url'=>array('update','id'=>$model->pro_id)),
-	array('label'=>'Delete Product','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->pro_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Product','url'=>array('admin')),
-);
-?>
+        $sql=Yii::app()->db->createCommand("SELECT  p.pro_id,p.item,p.unit_price,p.photo,pd.description,
+(CASE WHEN p.`status` = 1 THEN 'Available' ELSE 'Not available' END ) as `status` FROM tbl_product p INNER JOIN tbl_product_details pd on p.pro_id=pd.pro_id where p.pro_id=$id");
+        foreach ($sql->queryAll() as $row){
+            $item=$row['item'];
+             $unit_price=$row['unit_price'];
+             $status=$row['status'];
+             $photo=$row['photo'];
+            $desc=$row['description'];         
+    }
+    
+    echo "
+        <div class='span9'>
+            <h1 >$item</h1>
+        <div class='product-details'>
+               <div class='photo'>
+                 <img src=$photo alt='$photo'/>;
+               </div>
+               <div class='span2'>
+                    $status<br>
+                   $ $unit_price<br>
+               </div>
+               <div class='clear'>&nbsp;</div>
+               <div class='description'>
+                 <div class='desc-header'>
+                       <h2>Description</h2>  
+                           <div class='btn btn-inverse'>
+                                <a hre='#' title=''>Order Now</a>
+                            </div>
+                  </div>
+                   $desc
+               </div
+             </div>
+            </div>
+        ";
 
-<h1>View Product #<?php echo $model->pro_id; ?></h1>
-
-<?php $this->widget('bootstrap.widgets.TbDetailView',array(
-	'data'=>$model,
-	'attributes'=>array(
-		'pro_id',
-		'cat_id',
-		'item',
-		'qty',
-		'unit_price',
-		'photo',
-		'status',
-	),
-)); ?>
+ ?>

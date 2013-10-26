@@ -14,20 +14,20 @@
 
   <!-- Stylesheets -->
   <!-- Bootstrap -->
-  <link href="template/style/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/bootstrap.css" rel="stylesheet">
   <!-- Font awesome icon -->
-  <link rel="stylesheet" href="template/style/font-awesome.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/font-awesome.css">
   <!-- Navigation menu -->
-  <link rel="stylesheet" href="template/style/ddlevelsmenu-base.css">
-  <link rel="stylesheet" href="template/style/ddlevelsmenu-topbar.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/ddlevelsmenu-base.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/ddlevelsmenu-topbar.css">
   <!-- cSlider -->
-  <link rel="stylesheet" href="template/style/slider.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/slider.css">
   <!-- PrettyPhoto -->
-  <link rel="stylesheet" href="template/style/prettyPhoto.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/prettyPhoto.css">
   <!-- Custom style -->
-  <link href="template/style/style.css" rel="stylesheet">
+  <link href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/style.css" rel="stylesheet">
   <!-- Responsive Bootstrap -->
-  <link href="template/style/bootstrap-responsive.css" rel="stylesheet">
+  <link href="<?php echo Yii::app()->request->baseUrl; ?>/template/style/bootstrap-responsive.css" rel="stylesheet">
   
   <!-- HTML5 Support for IE -->
   <!--[if lt IE 9]>
@@ -38,16 +38,16 @@
   <link rel="shortcut icon" href="img/favicon/favicon.png">
   
   <!-- JS -->
-<script src="template/js/jquery.js"></script> <!-- jQuery -->
-<script src="template/js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="template/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
-<script src="template/js/jquery.isotope.js"></script> <!-- isotope -->
-<script src="template/js/ddlevelsmenu.js"></script> <!-- Navigation menu -->
-<script src="template/js/jquery.cslider.js"></script> <!-- jQuery cSlider -->
-<script src="template/js/modernizr.custom.28468.js"></script> <!-- Extra script for cslider -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/jquery.js"></script> <!-- jQuery -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/jquery.isotope.js"></script> <!-- isotope -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/ddlevelsmenu.js"></script> <!-- Navigation menu -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/jquery.cslider.js"></script> <!-- jQuery cSlider -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/modernizr.custom.28468.js"></script> <!-- Extra script for cslider -->
 
-<script src="template/js/filter.js"></script> <!-- Support -->
-<script src="template/js/custom.js"></script> <!-- Custom JS -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/filter.js"></script> <!-- Support -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/custom.js"></script> <!-- Custom JS -->
   
   
 </head>
@@ -134,7 +134,7 @@
                                   'class' => 'blightblue',
                                        ),                      
                            ),
-                             array('label'=>'Products', 'url'=>array('/site/product'),
+                             array('label'=>'Products', 'url'=>array('/product'),
                                     'linkOptions'=> array('class' => 'bred'),
                             ),
                                 array('label'=>'Accessories', 'url'=>array('customer/admin'),
@@ -192,7 +192,7 @@
                     <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
-                  <div class="da-img"><img src="template/img/parallax/1.png" alt="image01" /></div>
+                  <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/1.png" alt="image01" /></div>
 
               </div>
               <!-- Slide ends -->
@@ -208,7 +208,7 @@
                     <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
-                  <div class="da-img"><img src="template/img/parallax/2.png" alt="image01" /></div>
+                  <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/2.png" alt="image01" /></div>
 
               </div>
               <div class="da-slide">
@@ -222,7 +222,7 @@
                     <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
-                  <div class="da-img"><img src="template/img/parallax/3.png" alt="image01" /></div>
+                  <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/3.png" alt="image01" /></div>
 
               </div>
               <div class="da-slide">
@@ -236,7 +236,7 @@
                     <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
-                  <div class="da-img"><img src="template/img/parallax/4.png" alt="image01" /></div>
+                  <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/4.png" alt="image01" /></div>
 
               </div>
 
@@ -300,12 +300,12 @@
                <div class="span12">
                      <h3 class="title">Our Clients</h3>
                      <p><i class="icon-quote-left lightblue"></i>Vivamus diam diam, fermentum sed dapibus eget, egestas sed eros. Lorem fermentum ipsum dolor sit amet, ipsum dolor sit amet, consectetur fermentum adipiscing elit.<i class="icon-quote-right lightblue"></i></p>
-                     <img src="template/img/clients/amazon.png" alt="" />
-                     <img src="template/img/clients/google.png" alt="" />
-                     <img src="template/img/clients/twitter.png" alt="" />
-                     <img src="template/img/clients/facebook.png" alt="" />
-                     <img src="template/img/clients/skype.png" alt="" />
-                     <img src="template/img/clients/youtube.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/amazon.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/google.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/twitter.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/facebook.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/skype.png" alt="" />
+                     <img src="<?php $webroot?>/template/img/clients/youtube.png" alt="" />
                </div>
             </div>
     </div>

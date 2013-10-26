@@ -48,11 +48,9 @@ class ProductController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView()
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+		$this->render('view',array('id'=>$_GET['id']));
 	}
 
 	/**
@@ -92,7 +90,7 @@ class ProductController extends Controller
 
 		if(isset($_POST['Product']))
 		{
-			$model->attributes=$_POST['Product'];
+	 		$model->attributes=$_POST['Product'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->pro_id));
 		}
@@ -127,10 +125,8 @@ class ProductController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Product');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+                
+		$this->render('index');
 	}
 
 	/**
