@@ -259,7 +259,7 @@
              <div class="plist">';
  
 
-            $dbC = Yii::app()->db->createCommand("select * from tbl_category");
+            $dbC = Yii::app()->db->createCommand("select * from tbl_category where type_id = 1");
             
             foreach ($dbC->queryAll() as $row) {
                 //now we can access row columns as object properties:
