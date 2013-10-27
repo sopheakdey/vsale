@@ -1314,6 +1314,7 @@ line-height:22px;
 }
 
 
+/* About #2 */
 
 .about-two .pic img{
 	max-width: 180px;
@@ -2097,6 +2098,8 @@ color: #7E0101;
 text-transform: capitalize;}
  .btn-inverse a{color:#fff !important;}
  .btn-inverse {margin: 0 auto;margin: 0 20px 0 35px;}
-.product-wrapper .pic{text-align:center;padding: 10px 0;width: 170px;height: 110px;overflow: hidden;}
+.product-wrapper .pic{text-align:center;padding: 10px 0;}
 .product-wrapper .details label{text-align: center;}
-.clear{clear: both;}
+.clear{clear: both;height:0;}
+.product-details .description .desc-header h2{display: inline-block;padding:5px;float:left;}
+.product-details .description .desc-header .btn{float: right;margin: 20px 10px;}

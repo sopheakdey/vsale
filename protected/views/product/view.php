@@ -9,7 +9,6 @@
              $photo=$row['photo'];
             $desc=$row['description'];         
     }
-    
     echo "
  
             <h1 >$name</h1>
