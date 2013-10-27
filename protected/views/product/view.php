@@ -8,13 +8,13 @@
              $status=$row['status'];
              $photo=$row['photo'];
             $desc=$row['description'];         
-    }
+    
     echo "
  
             <h1 >$name</h1>
         <div class='product-details'>
                <div class='photo'>
-                 <img src=$photo alt='$photo'/>;
+                 <img src='$photo' alt='$photo'/>;
                </div>
                <div class='span2'>
                     $status<br>
@@ -32,5 +32,5 @@
                </div
              </div>
         ";
-
+}
  ?>

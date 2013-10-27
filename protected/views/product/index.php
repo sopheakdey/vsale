@@ -11,7 +11,7 @@ $webroot = yii::app()->request->baseUrl;
         $cate_name=$row['cat_name'];
         $cat_id = $row["cat_id"];
         $total = $row['total'];  
-    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=$cat_id and pt.type_id=1  ORDER BY (pro_id) DESC   limit 8 " );
+    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=$cat_id and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 " );
     echo "<li><span>$cate_name ($total)</span>";
     echo '<ul style="overflow:hidden">';
             foreach ($product_list->queryAll() as $row) {

@@ -267,7 +267,7 @@
                $cat_id=$row['cat_id'];
                 echo '<ul>';
                     echo '<li>';
-                    echo "<a href='http://vsale/index.php/category/view/$cat_id' >";
+                    echo "<a href='/index.php/category/view/$cat_id' >";
                             echo $cat;
                            echo " <input type='hidden' name='categoty_id' id='categoty_id' value='$cat_id'/>";
                       echo '</a>';

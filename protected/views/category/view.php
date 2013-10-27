@@ -11,22 +11,21 @@ $webroot = yii::app()->request->baseUrl;
         }
 
  echo '
-     <div class="span9">
         <div class="product-wrapper">';
-    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo from tbl_product p inner  join tbl_category c  on p.cat_id=c.cat_id where p.cat_id= $id  ORDER BY (pro_id) DESC   limit 8 " );
-    echo '<ul>';
+    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo from tbl_product p inner  join tbl_category c  on p.cat_id=c.cat_id where p.cat_id= $id  ORDER BY (pro_id) DESC" );
+    echo '<ul style="overflow:hidden;">';
             foreach ($product_list->queryAll() as $row) {
                 $product_name=$row['item'];
                 $price=$row['unit_price'];
                $photo=$row['photo'];
                $id=$row['pro_id'];
                 echo "<li>
-                        <div class='span2'>    
+                        <div class='span2' style='margin-bottom:20px;'>    
                            <div class='pic'>
                                 <img src='$photo' alt='$photo'/>
                             </div>
                             <div class='details'>
-                                   <label> $product_name   $ $price</label>
+                                   <label> $product_name  <br> $ $price</label>
                             </div>
                                 <div class='btn btn-inverse'>
                                     <inpu type'hidden' name='id' id='id' value='$id'/>
@@ -36,7 +35,6 @@ $webroot = yii::app()->request->baseUrl;
                 </li>";
             }
     echo '</ul>';
-echo'</div>
-</div> '; 
+echo'</div> '; 
 
 ?>
