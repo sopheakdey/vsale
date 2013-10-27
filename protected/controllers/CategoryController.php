@@ -6,7 +6,7 @@ class CategoryController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/product_template';
 
 	/**
 	 * @return array action filters
@@ -49,11 +49,9 @@ class CategoryController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView()
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+		$this->render('view',array('id'=>$_GET['id']));
 	}
 
 	/**
@@ -122,10 +120,7 @@ class CategoryController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Category');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		$this->render('index');
 	}
 
 	/**

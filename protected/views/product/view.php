@@ -1,9 +1,9 @@
 <?php
-
+ 
         $sql=Yii::app()->db->createCommand("SELECT  p.pro_id,p.item,p.unit_price,p.photo,pd.description,
 (CASE WHEN p.`status` = 1 THEN 'Available' ELSE 'Not available' END ) as `status` FROM tbl_product p INNER JOIN tbl_product_details pd on p.pro_id=pd.pro_id where p.pro_id=$id");
         foreach ($sql->queryAll() as $row){
-            $item=$row['item'];
+            $name=$row['item'];
              $unit_price=$row['unit_price'];
              $status=$row['status'];
              $photo=$row['photo'];
@@ -11,8 +11,8 @@
     }
     
     echo "
-        <div class='span9'>
-            <h1 >$item</h1>
+ 
+            <h1 >$name</h1>
         <div class='product-details'>
                <div class='photo'>
                  <img src=$photo alt='$photo'/>;
@@ -32,7 +32,6 @@
                    $desc
                </div
              </div>
-            </div>
         ";
 
  ?>

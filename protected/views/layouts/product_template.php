@@ -253,7 +253,33 @@
 
 <div class="container">
     <div class="row">
-        <div class="span12">
+            <?php
+            echo ' <div class="span3" >
+            <div class="pricel">
+             <div class="plist">';
+ 
+
+            $dbC = Yii::app()->db->createCommand("select * from tbl_category");
+            
+            foreach ($dbC->queryAll() as $row) {
+                //now we can access row columns as object properties:
+                $cat=$row['cat_name'];
+               $cat_id=$row['cat_id'];
+                echo '<ul>';
+                    echo '<li>';
+                    echo "<a href='http://vsale/index.php/category/view/$cat_id' >";
+                            echo $cat;
+                           echo " <input type='hidden' name='categoty_id' id='categoty_id' value='$cat_id'/>";
+                      echo '</a>';
+                    echo    '</li>';
+                echo '</ul>';
+                
+            }
+         
+ echo  '  </div>
+     </div></div>';
+            ?>
+        <div class="span9"> 
             <?php if(isset($this->breadcrumbs)):?>
                     <?php $this->widget('zii.widgets.CBreadcrumbs', array(
                             'links'=>$this->breadcrumbs,
@@ -263,7 +289,6 @@
             <?php echo $content; ?>
                     <div class="clear">&nbsp;</div>
         </div>
-        
     </div>
 </div>
 
