@@ -1429,7 +1429,7 @@ font-size: 13px;
 
 .pricel{
 	text-align: center;
-	margin-top:10px;
+	margin-top:30px;
 }
 
 .pricel .phead-top{
@@ -2089,17 +2089,23 @@ footer .copy{
 	}
 }
 .product-wrapper ul li{list-style:none;}
-.product-wrapper ul li span{background:#ddd;
+.product-wrapper ul li span,.cat_name,.pricel .mobile-phone{background:#ddd;
 width: 100%;
 display: inline-block;
 padding: 5px 5px;
 margin: 20px 0;
 color: #7E0101;
-text-transform: capitalize;}
+text-transform: capitalize;
+font-weight: bold;}
+.product-wrapper ul li span a{
+    float: right;
+    color: #7E0101;
+}
+.product-wrapper ul li span a:hover{color: red !important }
  .btn-inverse a{color:#fff !important;}
  .btn-inverse {margin: 0 auto;margin: 0 20px 0 35px;}
-.product-wrapper .pic{text-align:center;padding: 10px 0;}
-.product-wrapper .details label{text-align: center;}
+.product-wrapper .pic{text-align:center;padding: 10px 0;width: 170px;height: 110px;overflow: hidden;}
+.product-wrapper .details label{text-align: center;color: #7A78FB;}
 .clear{clear: both;height:0;}
 .product-details .description .desc-header h2{display: inline-block;padding:5px;float:left;}
 .product-details .description .desc-header .btn{float: right;margin: 20px 10px;}

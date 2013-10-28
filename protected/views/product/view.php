@@ -11,7 +11,7 @@
     
     echo "
  
-            <h1 >$name</h1>
+            <h1 style='margin-top:24px;'>$name</h1>
         <div class='product-details'>
                <div class='photo'>
                  <img src='$photo' alt='$photo'/>;

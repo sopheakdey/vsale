@@ -100,11 +100,11 @@
 
             <div class="logo-image">
               <!-- Image link -->
-              <a href="index-2.html"><i class="icon-desktop blue"></i></a>
+              <a href="/"><i class="icon-mobile-phone blue"></i></a>
             </div>
             
             <div class="logo-text">
-              <h1><a href="index-2.html">Vsale<span class="lightblue">Computers</span></a></h1>
+              <h1><a href="/">Vsale<span class="lightblue">Phone</span></a></h1>
               <div class="logo-meta">Siem Reap Angkor</div>
             </div>
 
@@ -129,7 +129,7 @@
                        'activateParents' => true,
 			'items'=>array(
                             
-                             array('label'=>'Home', 'url'=>array('/site/index'), 
+                             array('label'=>'Home', 'url'=>array('/'), 
                                   'linkOptions'=> array(
                                   'class' => 'blightblue',
                                        ),                      
