@@ -296,7 +296,7 @@
 
             
 <!-- Clients starts -->
-  
+<!--  
   <div class="clients">
     <div class="container">
             <div class="row">
@@ -319,20 +319,21 @@
 <!-- Footer -->
 
 <!-- Below area is for testimonial -->
+<!--
 <div class="foot blightblue">
   <div class="container">
     <div class="row">
-      <div class="span12">
+      <div class="span12"> -->
           
           <!-- User icon -->
-          <span class="twitter-icon text-center"><i class="icon-user"></i></span>
+          <!--<span class="twitter-icon text-center"><i class="icon-user"></i></span>
           <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi <br />fermentum quis hendrerit magna vestibulum."</em></p>
           
         
       </div>
     </div>
   </div>
-</div>  
+</div>  -->
 
 <footer>
   <div class="container">
@@ -410,7 +411,7 @@
           </div>
         </div>
 
-      </div>
+      </div> 
 
       <div class="span12">
           <div class="copy">
