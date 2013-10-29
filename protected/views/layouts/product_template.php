@@ -292,7 +292,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
             
 <!-- Clients starts -->
@@ -336,7 +336,7 @@
 </div>  -->
 
 <footer>
-  <div class="container">
+  <div class="container" style="margin-top:10px;">
     <div class="row">
 
 
