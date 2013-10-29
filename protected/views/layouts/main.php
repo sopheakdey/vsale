@@ -35,7 +35,7 @@
   <![endif]-->
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.png">
+  <link rel="shortcut icon" href="/images/favicon.png">
   
   <!-- JS -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/jquery.js"></script> <!-- jQuery -->
