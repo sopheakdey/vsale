@@ -95,17 +95,10 @@
         <div class="span3">
 
           <!-- Logo starts -->
-
           <div class="logo">
-
-            <div class="logo-image">
+          <div class="logo-image">
               <!-- Image link -->
-              <a href="/"><i class="icon-mobile-phone blue"></i></a>
-            </div>
-            
-            <div class="logo-text">
-              <h1><a href="/">Vsale<span class="lightblue">Phone</span></a></h1>
-              <div class="logo-meta">Siem Reap Angkor</div>
+              <a href="/"><img src="/images/logo.png"></i></a>
             </div>
 
             <div class="clearfix"></div>
@@ -131,23 +124,23 @@
                             
                              array('label'=>'Home', 'url'=>array('/'), 
                                   'linkOptions'=> array(
-                                  'class' => 'blightblue',
+                                  'class' => 'blightblue bg-home',
                                        ),                      
                            ),
                              array('label'=>'Products', 'url'=>array('/product'),
-                                    'linkOptions'=> array('class' => 'bred'),
+                                    'linkOptions'=> array('class' => 'bred bg-product'),
                             ),
                                 array('label'=>'Accessories', 'url'=>array('customer/admin'),
-                                    'linkOptions'=> array('class' => 'bviolet'),
+                                    'linkOptions'=> array('class' => 'bviolet bg-accessory'),
                                     ),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),
-                                    'linkOptions'=> array('class' => 'bgreen '),
+                                    'linkOptions'=> array('class' => 'bgreen bg-about'),
                                     ),
 				array('label'=>'Contact', 'url'=>array('/site/contact'),
-                                    'linkOptions'=> array('class' => 'borange'),
+                                    'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Login', 'url'=>array('/site/login'), 
-                                    'linkOptions'=> array('class' => 'bblue'),
+				array('label'=>'Shop Now', 'url'=>array('/site/login'), 
+                                    'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),
                                     'linkOptions'=> array('class' => 'bblue'),

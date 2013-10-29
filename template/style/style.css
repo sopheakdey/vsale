@@ -418,13 +418,13 @@ header{
 }
 
 header .logo{
-	height: 120px;
+	width: 18px;
 	padding: 0px;
 	margin: 0px;
 }
 
 header .logo .logo-image{
-	width: 50px;
+	width: 180px;
 	float: left;
 }
 
@@ -459,7 +459,7 @@ header .logo-meta{
 /* Navbar */
 
 .mattblackmenu{
-	margin-top: 5px;
+	margin-top:10px;
 }
 
 .mattblackmenu ul{
@@ -475,6 +475,7 @@ header .logo-meta{
 	border-right:0px !important;
 	margin: 0px 2px;
 	font-size: 16px;
+        padding-bottom: 0 !important;
 }
 
 .mattblackmenu li a > i{
@@ -2109,3 +2110,9 @@ font-weight: bold;}
 .product-details .description .desc-header{overflow: hidden;background: #ddd;}
 .product-details .description{border:1px solid #ddd}
 .product-details table tr td{border: none !important}
+.bg-home{background: url(/images/bg-home.png) #52b9e9 center no-repeat !important;}
+.bg-contact{background: url(/images/bg-contact.png) #f88529 center no-repeat !important;}
+.bg-about{background: url(/images/bg-about.png) #43c83c center no-repeat !important;}
+.bg-accessory{background: url(/images/bg-accessory.png) #932ab6 center no-repeat !important;}
+.bg-product{background: url(/images/bg-product.png) #fa3031 center no-repeat !important;}
+.bg-shop{background: url(/images/bg-shop.png) #1171a3 center no-repeat !important;}

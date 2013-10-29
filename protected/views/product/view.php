@@ -14,7 +14,7 @@
             <h1 style='margin-top:24px;color:#7A78FB'>$name</h1>
         <div class='product-details'>
                <div class='photo' style='margin-left:20px;'>
-                 <img src='$photo' alt='$photo'/>;
+                 <img src='$photo' alt='$photo'/>
                </div>
                <div class='span2' style='color:red;margin-left:5px;text-align: center;width: 104px;'>
                     ( $status )<br>
