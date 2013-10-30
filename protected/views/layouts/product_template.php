@@ -62,21 +62,20 @@
         <div class="span8">
           <div class="spara"> 
             <!-- Contact details -->
-            <p><i class="icon-envelope-alt lightblue"></i> Vsale@gmail.com &nbsp; 
-              <i class="icon-twitter lightblue"></i> @Daro &nbsp; 
-              <i class="icon-desktop lightblue"></i> (+855) 010 253 210
+            <p><i class="icon-envelope-alt lightblue"></i> vsalephone@info.com &nbsp; 
+               <i class="icon-desktop lightblue"></i> (+855) 12 222 222
             </p>
           </div>
         </div>
         <div class="span4">
             <div class="social">
               <!-- Social media icons. Repalce # with your profile links -->
-                      <a href="#" class="bblue"><i class="icon-facebook"></i></a>
-                      <a href="#" class="borange"><i class="icon-google-plus"></i></a> 
-                      <a href="#" class="blightblue"><i class="icon-twitter"></i></a>
-                      <a href="#" class="bviolet"><i class="icon-linkedin"></i></a>
-                      <a href="#" class="bred"><i class="icon-pinterest"></i></a>
-                      <a href="#" class="borange"><i class="icon-rss"></i></a>
+                      <a href="http://www.facebook.com" class="bblue"><i class="icon-facebook"></i></a>
+                      <a href="http://www.googleplus.com" class="borange"><i class="icon-google-plus"></i></a> 
+                      <a href="http://www.twitter.com" class="blightblue"><i class="icon-twitter"></i></a>
+                      <a href="http://www.linkedin.com" class="bviolet"><i class="icon-linkedin"></i></a>
+                      <a href="http://www.pinterest.com" class="bred"><i class="icon-pinterest"></i></a>
+                      <a href="http://www.rss.com" class="borange"><i class="icon-rss"></i></a>
             </div>
         </div>
       </div>
@@ -95,17 +94,10 @@
         <div class="span3">
 
           <!-- Logo starts -->
-
           <div class="logo">
-
-            <div class="logo-image">
+          <div class="logo-image">
               <!-- Image link -->
-              <a href="/"><i class="icon-mobile-phone blue"></i></a>
-            </div>
-            
-            <div class="logo-text">
-              <h1><a href="/">Vsale<span class="lightblue">Phone</span></a></h1>
-              <div class="logo-meta">Siem Reap Angkor</div>
+              <a href="/"><img src="/images/logo.png"></i></a>
             </div>
 
             <div class="clearfix"></div>
@@ -131,23 +123,23 @@
                             
                              array('label'=>'Home', 'url'=>array('/'), 
                                   'linkOptions'=> array(
-                                  'class' => 'blightblue',
+                                  'class' => 'blightblue bg-home',
                                        ),                      
                            ),
                              array('label'=>'Products', 'url'=>array('/product'),
-                                    'linkOptions'=> array('class' => 'bred'),
+                                    'linkOptions'=> array('class' => 'bred bg-product'),
                             ),
                                 array('label'=>'Accessories', 'url'=>array('customer/admin'),
-                                    'linkOptions'=> array('class' => 'bviolet'),
+                                    'linkOptions'=> array('class' => 'bviolet bg-accessory'),
                                     ),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),
-                                    'linkOptions'=> array('class' => 'bgreen '),
+                                    'linkOptions'=> array('class' => 'bgreen bg-about'),
                                     ),
 				array('label'=>'Contact', 'url'=>array('/site/contact'),
-                                    'linkOptions'=> array('class' => 'borange'),
+                                    'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Login', 'url'=>array('/site/login'), 
-                                    'linkOptions'=> array('class' => 'bblue'),
+				array('label'=>'Shop Now', 'url'=>array('/site/login'), 
+                                    'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),
                                     'linkOptions'=> array('class' => 'bblue'),
@@ -294,47 +286,6 @@
 </div>
 </div>
 
-            
-<!-- Clients starts -->
-<!--  
-  <div class="clients">
-    <div class="container">
-            <div class="row">
-               <div class="span12">
-                     <h3 class="title">Our Clients</h3>
-                     <p><i class="icon-quote-left lightblue"></i>Vivamus diam diam, fermentum sed dapibus eget, egestas sed eros. Lorem fermentum ipsum dolor sit amet, ipsum dolor sit amet, consectetur fermentum adipiscing elit.<i class="icon-quote-right lightblue"></i></p>
-                     <img src="<?php $webroot?>/template/img/clients/amazon.png" alt="" />
-                     <img src="<?php $webroot?>/template/img/clients/google.png" alt="" />
-                     <img src="<?php $webroot?>/template/img/clients/twitter.png" alt="" />
-                     <img src="<?php $webroot?>/template/img/clients/facebook.png" alt="" />
-                     <img src="<?php $webroot?>/template/img/clients/skype.png" alt="" />
-                     <img src="<?php $webroot?>/template/img/clients/youtube.png" alt="" />
-               </div>
-            </div>
-    </div>
-  </div>
-            
-<!-- Clients ends -->
-
-<!-- Footer -->
-
-<!-- Below area is for testimonial -->
-<!--
-<div class="foot blightblue">
-  <div class="container">
-    <div class="row">
-      <div class="span12"> -->
-          
-          <!-- User icon -->
-          <!--<span class="twitter-icon text-center"><i class="icon-user"></i></span>
-          <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi <br />fermentum quis hendrerit magna vestibulum."</em></p>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>  -->
-
 <footer>
   <div class="container" style="margin-top:10px;">
     <div class="row">
@@ -345,23 +296,23 @@
         <div class="span3">
           <div class="fwidget">
             
-            <h4>Contact</h4>
+             <h4>Contact</h4>
 
-                  <p>Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. </p>
+                  <p>Siem Reap office</p>
                   <hr />
-                  <i class="icon-home"></i> &nbsp; 123, Some Area. Los Angeles, CA, 54321.
+                  <i class="icon-home"></i> &nbsp; Nation road 6, Siem Reap, Cambodia
                   <hr />
-                  <i class="icon-phone"></i> &nbsp; +239-3823-3434
+                  <i class="icon-phone"></i> &nbsp; +855 12 222 222
                   <hr />
-                  <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:#">someone@company.com</a>
+                  <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:#">vsalephone@info.com</a>
                   <hr />
                     <div class="social">
-                      <a href="#" class="bblue"><i class="icon-facebook"></i></a>
-                      <a href="#" class="borange"><i class="icon-google-plus"></i></a> 
-                      <a href="#" class="blightblue"><i class="icon-twitter"></i></a>
-                      <a href="#" class="bviolet"><i class="icon-linkedin"></i></a>
-                      <a href="#" class="bred"><i class="icon-pinterest"></i></a>
-                      <a href="#" class="borange"><i class="icon-rss"></i></a>
+                      <a href="http://www.facebook.com" class="bblue"><i class="icon-facebook"></i></a>
+                      <a href="http://www.googleplus.com" class="borange"><i class="icon-google-plus"></i></a> 
+                      <a href="http://www.twitter.com" class="blightblue"><i class="icon-twitter"></i></a>
+                      <a href="http://www.linkedin.com" class="bviolet"><i class="icon-linkedin"></i></a>
+                      <a href="http://www.pinterest.com" class="bred"><i class="icon-pinterest"></i></a>
+                      <a href="http://www.rss.com" class="borange"><i class="icon-rss"></i></a>
                     </div>
 
           </div>
@@ -371,12 +322,12 @@
           <div class="fwidget">
             <h4>Categories</h4>
             <ul>
-              <li><a href="#">Condimentum - Condimentum gravida</a></li>
-              <li><a href="#">Etiam at - Condimentum gravida</a></li>
-              <li><a href="#">Fusce vel - Condimentum gravida</a></li>
-              <li><a href="#">Vivamus - Condimentum gravida</a></li>
-              <li><a href="#">Pellentesque - Condimentum gravida</a></li>
-              <li><a href="#">Fusce vel - Condimentum gravida</a></li>
+               <li><a href="/index.php/category/view/1">Apple</a></li>
+              <li><a href="/index.php/category/view/2">Sumsung</a></li>
+              <li><a href="/index.php/category/view/3">Nokia</a></li>
+              <li><a href="/index.php/category/view/4">Sony</a></li>
+              <li><a href="/index.php/category/view/5">LG</a></li>
+              <li><a href="/index.php/category/view/6">HTC</a></li>
             </ul>
           </div>
         </div>        
@@ -385,7 +336,7 @@
           <div class="fwidget">
             
             <h4>Subscribe</h4>
-            <p>Duis leo risus, condimentum ut posuere ac, vehicula luctus nunc.  Quisque rhoncus, a sodales enim arcu quis turpis.</p>
+            <p><strong>Vsalephone shop</strong> sales many type of phone that import from USA, Korea, China, Holand. All new products include with screen, install program and new game, and warranty. We also repair phones with suitable price.</p>
             <p>Enter you email to Subscribe</p>
             
             <form class="form-inline">
@@ -402,20 +353,18 @@
           <div class="fwidget">
             <h4>Recent Posts</h4>
             <ul>
-              <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
-              <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
-              <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
-              <li><a href="#">Vivamus scelerisque dui in massa</a></li>
-              <li><a href="#">Pellentesque eget adipiscing dui semper</a></li>
+              <li><a href="#">Iphone 5s (32G), Iphone 5c (32G) </a></li>
+              <li><a href="#">HTC one mini</a></li>
+              <li><a href="#">Sumsumg galaxy note 3</a></li>              
             </ul>
           </div>
         </div>
 
-      </div> 
+      </div>
 
       <div class="span12">
           <div class="copy">
-                <p>Copyright &copy; <a href="#">Your Site</a> - <a href="index-2.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="contactus.html">Contact Us</a></p>
+                <p style="text-align:center">Copyright &copy; 2013 &nbsp;&nbsp;<a href="http://www.vsalephone.com">www.vsalephone.com</a> &nbsp;&nbsp;-&nbsp;&nbsp; <a href="/index.php">Home</a> | <a href="/index.php/product">Product</a> | <a href="/index.php/accessories">Accessories</a> | <a href="/index.php/about us">About us</a> | <a href="/index.php/contact">Contact</a></p>
           </div>
       </div>
 

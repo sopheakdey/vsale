@@ -62,21 +62,20 @@
         <div class="span8">
           <div class="spara"> 
             <!-- Contact details -->
-            <p><i class="icon-envelope-alt lightblue"></i> Vsale@gmail.com &nbsp; 
-              <i class="icon-twitter lightblue"></i> @Daro &nbsp; 
-              <i class="icon-desktop lightblue"></i> (+855) 010 253 210
+            <p><i class="icon-envelope-alt lightblue"></i> vsalephone@info.com &nbsp; 
+               <i class="icon-desktop lightblue"></i> (+855) 12 222 222
             </p>
           </div>
         </div>
         <div class="span4">
             <div class="social">
               <!-- Social media icons. Repalce # with your profile links -->
-                      <a href="#" class="bblue"><i class="icon-facebook"></i></a>
-                      <a href="#" class="borange"><i class="icon-google-plus"></i></a> 
-                      <a href="#" class="blightblue"><i class="icon-twitter"></i></a>
-                      <a href="#" class="bviolet"><i class="icon-linkedin"></i></a>
-                      <a href="#" class="bred"><i class="icon-pinterest"></i></a>
-                      <a href="#" class="borange"><i class="icon-rss"></i></a>
+                      <a href="http://www.facebook.com" class="bblue"><i class="icon-facebook"></i></a>
+                      <a href="http://www.googleplus.com" class="borange"><i class="icon-google-plus"></i></a> 
+                      <a href="http://www.twitter.com" class="blightblue"><i class="icon-twitter"></i></a>
+                      <a href="http://www.linkedin.com" class="bviolet"><i class="icon-linkedin"></i></a>
+                      <a href="http://www.pinterest.com" class="bred"><i class="icon-pinterest"></i></a>
+                      <a href="http://www.rss.com" class="borange"><i class="icon-rss"></i></a>
             </div>
         </div>
       </div>
@@ -100,13 +99,10 @@
 
             <div class="logo-image">
               <!-- Image link -->
-              <a href="/"><i class="icon-mobile-phone blue"></i></a>
+              <a href="/"><img src="/images/logo.png"></i></a>
             </div>
             
-            <div class="logo-text">
-              <h1><a href="/">Vsale<span class="lightblue">Phone</span></a></h1>
-              <div class="logo-meta">Siem Reap Angkor</div>
-            </div>
+            
 
             <div class="clearfix"></div>
 
@@ -125,36 +121,36 @@
               <!-- Main navigation -->
               <!-- Use the background color class in anchor tag for colorful menu -->
               
-                 <?php $this->widget('zii.widgets.CMenu',array(
+                    <?php $this->widget('zii.widgets.CMenu',array(
                        'activateParents' => true,
 			'items'=>array(
                             
                              array('label'=>'Home', 'url'=>array('/'), 
                                   'linkOptions'=> array(
-                                  'class' => 'blightblue',
+                                  'class' => 'blightblue bg-home',
                                        ),                      
                            ),
                              array('label'=>'Products', 'url'=>array('/product'),
-                                    'linkOptions'=> array('class' => 'bred'),
+                                    'linkOptions'=> array('class' => 'bred bg-product'),
                             ),
                                 array('label'=>'Accessories', 'url'=>array('customer/admin'),
-                                    'linkOptions'=> array('class' => 'bviolet'),
+                                    'linkOptions'=> array('class' => 'bviolet bg-accessory'),
                                     ),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),
-                                    'linkOptions'=> array('class' => 'bgreen '),
+                                    'linkOptions'=> array('class' => 'bgreen bg-about'),
                                     ),
 				array('label'=>'Contact', 'url'=>array('/site/contact'),
-                                    'linkOptions'=> array('class' => 'borange'),
+                                    'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Login', 'url'=>array('/site/login'), 
-                                    'linkOptions'=> array('class' => 'bblue'),
+				array('label'=>'Shop Now', 'url'=>array('/site/login'), 
+                                    'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),
                                     'linkOptions'=> array('class' => 'bblue'),
                                     'visible'=>!Yii::app()->user->isGuest)
 			),
                     
-              )); ?>  
+              )); ?> 
             </div>
           </div>
 
@@ -306,12 +302,12 @@
           <div class="fwidget">
             <h4>Categories</h4>
             <ul>
-              <li><a href="#">Apple</a></li>
-              <li><a href="#">Sumsung</a></li>
-              <li><a href="#">HTC</a></li>
-              <li><a href="#">LG</a></li>
-              <li><a href="#">Sony</a></li>
-              <li><a href="#">Nokia</a></li>
+              <li><a href="/index.php/category/view/1">Apple</a></li>
+              <li><a href="/index.php/category/view/2">Sumsung</a></li>
+              <li><a href="/index.php/category/view/3">Nokia</a></li>
+              <li><a href="/index.php/category/view/4">Sony</a></li>
+              <li><a href="/index.php/category/view/5">LG</a></li>
+              <li><a href="/index.php/category/view/6">HTC</a></li>
             </ul>
           </div>
         </div>        
