@@ -139,7 +139,7 @@
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),
                                     'linkOptions'=> array('class' => 'bgreen bg-about'),
                                     ),
-				array('label'=>'Contact', 'url'=>array('/site/contact'),
+				array('label'=>'Contact', 'url'=>array('/site/contactus'),
                                     'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
 				array('label'=>'Shop Now', 'url'=>array('/site/login'), 

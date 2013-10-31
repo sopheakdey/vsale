@@ -1368,3 +1368,205 @@ Stack trace:
 REQUEST_URI=/index.php/category/view/img/favicon/favicon.png
 in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\CategoryController.php (54)
 in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/31 11:56:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "çontactus".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('??ontactus', NULL, true)
+#1 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\SiteController.php(110): CController->render('??ontactus')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContactus()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('contactus')
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contactus')
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/ddle...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/ddlevelsmenu-base.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/font...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/font-awesome.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/boot...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/bootstrap.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/ddle...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/ddlevelsmenu-topbar.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/pret...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/prettyPhoto.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/slid...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/slider.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/styl...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/style.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('style')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('style')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/style/boot...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/style/bootstrap-responsive.css
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.prettyPhoto.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/ddlevel...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/ddlevelsmenu.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.isotope.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.cslider.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/moderni...')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/modernizr.custom.28468.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/filter....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/filter.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/10/31 11:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/custom....')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/custom.js
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
