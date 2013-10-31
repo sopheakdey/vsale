@@ -23,7 +23,7 @@ $webroot = yii::app()->request->baseUrl;
                 echo "<li>
                         <div class='span2' style='margin-bottom:20px;'>    
                            <div class='pic'>
-                                <img src='$photo' alt='$photo'/>
+                                <a href='$webroot/index.php/product/view/$id' title='More Details'><img src='$photo' alt='$photo'/></a>
                             </div>
                             <div class='details'>
                                    <label> $product_name <br> <img src='$new_arrival' /><br> $ $price</label>
