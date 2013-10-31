@@ -12,7 +12,7 @@ $webroot = yii::app()->request->baseUrl;
 
  echo '
         <div class="product-wrapper" style="border: 1px solid #dddddd">';
-    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo,CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' END as new_arrival from tbl_product p inner  join tbl_category c  on p.cat_id=c.cat_id where p.cat_id= $id  ORDER BY (pro_id) DESC" );
+    $product_list = Yii::app()->db->createCommand("select pro_id,cat_name,item,unit_price,photo,(CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join tbl_category c  on p.cat_id=c.cat_id where p.cat_id= $id  ORDER BY (pro_id) DESC" );
     echo '<ul style="overflow:hidden;">';
             foreach ($product_list->queryAll() as $row) {
                 $product_name=$row['item'];
@@ -26,7 +26,7 @@ $webroot = yii::app()->request->baseUrl;
                                 <a href='$webroot/index.php/product/view/$id' title='More Details'><img src='$photo' alt='$photo'/></a>
                             </div>
                             <div class='details'>
-                                   <label> $product_name <br> <img src='$new_arrival' /><br> $ $price</label>
+                                   <label style='cursor: default;'> $product_name <br> <img src='$new_arrival' /><br> $ $price</label>
                             </div>
                                 <div class='btn btn-inverse'>
                                     <inpu type'hidden' name='id' id='id' value='$id'/>
