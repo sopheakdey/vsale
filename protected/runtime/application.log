@@ -1368,3 +1368,62 @@ Stack trace:
 REQUEST_URI=/index.php/category/view/img/favicon/favicon.png
 in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\CategoryController.php (54)
 in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/30 13:50:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 .
+in C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php (17)
+in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php (129)
+in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/30 13:50:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 ' in C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php(17): CDbCommand->queryAll()
+#2 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(126): require('C:\Users\peann\...')
+#3 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\peann\...', NULL, true)
+#4 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\peann\...', NULL, true)
+#5 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php(129): CController->render('index')
+#7 C:\Users\peann\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#8 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#18 C:\Users\peann\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\Users\peann\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/product
+HTTP_REFERER=http://vsale:81/index.php
+---
+2013/10/30 13:50:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 .
+in C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php (17)
+in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php (129)
+in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/30 13:50:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 ' in C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php(17): CDbCommand->queryAll()
+#2 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(126): require('C:\Users\peann\...')
+#3 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\peann\...', NULL, true)
+#4 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\peann\...', NULL, true)
+#5 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php(129): CController->render('index')
+#7 C:\Users\peann\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#8 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#18 C:\Users\peann\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\Users\peann\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/product
+---
