@@ -1,0 +1,11 @@
+ $(document).ready(function(){   
+   $('.order-now').click(function(){
+             $('#myModal').modal('show');
+             $url='http://vsale/index.php/customerlogin';
+             $(".modal-body").load($url);
+             $('.register').click(function(){
+                 $register='http://vsale/index.php/customerRegister';
+                 $(".modal-body").load($register);
+             });
+        });
+});

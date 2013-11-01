@@ -48,6 +48,7 @@
 
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/filter.js"></script> <!-- Support -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/template/js/custom.js"></script> <!-- Custom JS -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/script.js"></script>
   
   
 </head>
@@ -129,7 +130,7 @@
                              array('label'=>'Products', 'url'=>array('/product'),
                                     'linkOptions'=> array('class' => 'bred bg-product'),
                             ),
-                                array('label'=>'Accessories', 'url'=>array('customer/admin'),
+                                array('label'=>'Accessories', 'url'=>array('/Accessories'),
                                     'linkOptions'=> array('class' => 'bviolet bg-accessory'),
                                     ),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),
