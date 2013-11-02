@@ -23,32 +23,36 @@
                                     <div class="form">
                                       <!-- Contact form (not working)-->
                                       <form class="form-horizontal">
+                                          <!-- Title -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="title">Title</label>
+                                            <div class="controls">
+                                                <select id="title">
+                                                    <option value="Mr">Mr</option>
+                                                    <option value="Miss">Miss</option>
+                                                    <option value="Mrs">Mrs</option>
+                                                </select>
+                                            </div>
+                                          </div>
                                           <!-- Name -->
                                           <div class="control-group">
                                             <label class="control-label" for="name">Name</label>
                                             <div class="controls">
-                                              <input type="text" class="input-medium" id="name">
+                                              <input type="text" class="input-medium" id="name" placeholder="Please input your name here">
                                             </div>
                                           </div>
                                           <!-- Email -->
                                           <div class="control-group">
                                             <label class="control-label" for="email">Email</label>
                                             <div class="controls">
-                                              <input type="text" class="input-medium" id="email">
-                                            </div>
-                                          </div>
-                                          <!-- Website -->
-                                          <div class="control-group">
-                                            <label class="control-label" for="website">Website</label>
-                                            <div class="controls">
-                                              <input type="text" class="input-medium" id="website">
+                                              <input type="text" class="input-medium" id="email" placeholder="Please input your email here">
                                             </div>
                                           </div>
                                           <!-- Comment -->
                                           <div class="control-group">
                                             <label class="control-label" for="comment">Comment</label>
                                             <div class="controls">
-                                              <textarea class="input-madium" id="comment" rows="3"></textarea>
+                                              <textarea class="input-madium" id="comment" rows="3" placeholder="Please input your comment here"></textarea>
                                             </div>
                                           </div>
                                           <!-- Buttons -->
@@ -69,19 +73,18 @@
                                        <div class="address">
                                            <address>
                                               <!-- Company name -->
-                                              <h4>Responsive Web, Inc.</h4>
+                                              <h4>Siem Reap office</h4>
                                               <!-- Address -->
-                                              795 Folsom Ave, Suite 600<br>
-                                              San Francisco, CA 94107<br>
+                                              Nation road 6, Siem Reap, Cambodia<br>
                                               <!-- Phone number -->
-                                              <abbr title="Phone">P:</abbr> (123) 456-7890.
+                                              <abbr title="Phone">Tel:</abbr> +855 12 222 222
                                            </address>
                                             
                                            <address>
                                               <!-- Name -->
-                                              <h4>Full Name</h4>
+                                              <h4>Email:</h4>
                                               <!-- Email -->
-                                              <a href="mailto:#">first.last@gmail.com</a>
+                                              <a href="mailto:#"> vsalephone@info.com</a>
                                            </address>
                                            
                                        </div>
