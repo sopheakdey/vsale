@@ -253,11 +253,7 @@ closer and captures those fun moments when we are together.
 <div class="container">
     <div class="row">
         <div class="span12">
-            <?php if(isset($this->breadcrumbs)):?>
-                    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
-                            'links'=>$this->breadcrumbs,
-                    )); ?><!-- breadcrumbs -->
-            <?php endif?>
+            
 
             <?php echo $content; ?>
                     <div class="clear">&nbsp;</div>

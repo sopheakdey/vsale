@@ -1885,3 +1885,19 @@ REQUEST_URI=/index.php/product/view/images/bg_header.gif
 in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
 in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
 >>>>>>> 103b064206f704fe97b62085db624ca0cfc27727
+2013/11/03 10:28:38 [error] [php] Undefined index: id (C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\peann\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\peann\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
