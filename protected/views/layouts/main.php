@@ -1,4 +1,4 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller  */ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -142,7 +142,7 @@
 				array('label'=>'Contact', 'url'=>array('/site/contactus'),
                                     'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Shop Now', 'url'=>array('/site/login'), 
+				array('label'=>'Shop Now', 'url'=>array('/customer/Register'), 
                                     'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),
@@ -250,7 +250,7 @@ closer and captures those fun moments when we are together.
 <!-- Hero starts -->
 
 
-<div class="container">
+<div class="container" >
     <div class="row">
         <div class="span12">
             

@@ -23,20 +23,21 @@
                <div class='clear'>&nbsp;</div>
                <div class='description'>
                  <div class='desc-header'>
+                 <h2>Short Desctiption</h2> 
                  <div class='btn btn-inverse'>
                                 <a class='order-now' hre='#' title=''>Order Now</a>
                             </div>   
                             <div class='modal hide fade' id='myModal'>
                                 <div class='modal-header'>
                                   <a class='close' data-dismiss='modal'>×</a>
-                                  <h3>Modal header</h3>
+                                   <h3>Login to your Account</h3>
                                 </div>
                                 <div class='modal-body'>
-                                  <p>One fine body…</p>
+                                 
                                 </div>
                                 <div class='modal-footer'>
-                                  <a href='#' class='btn'>Close</a>
-                                  <a href='#' class='btn btn-primary'>Save changes</a>
+                                  <a href='#' class='btn close'>Close</a>
+                                  <a href='#' class='btn customer-login'>Log In</a>
                                 </div>
                               </div>
                   </div>
