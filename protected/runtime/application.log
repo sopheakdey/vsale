@@ -2169,6 +2169,7 @@ in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerLoginC
 in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
 =======
 >>>>>>> 103b064206f704fe97b62085db624ca0cfc27727
+<<<<<<< HEAD
 >>>>>>> 859e731f01d50712d0758bfcefaf90c99458ff96
 2013/11/03 02:56:09 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
 Stack trace:
@@ -2998,3 +2999,37 @@ Stack trace:
 REQUEST_URI=/index.php/product/view/images/bg_header.gif
 in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
 in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+=======
+2013/11/01 13:55:34 [error] [php] Undefined index: id (C:\Users\sopheakdey heng\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\sopheakdey heng\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\sopheakdey heng\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\sopheakdey heng\Documents\GitHub\vsale\index.php (13)
+2013/11/02 03:48:58 [error] [php] Undefined index: id (C:\Users\sopheakdey heng\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\sopheakdey heng\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\sopheakdey heng\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\sopheakdey heng\Documents\GitHub\vsale\index.php (13)
+>>>>>>> 8943296544ef4f1cd319f7b2864ff6cbd8018e35
