@@ -8,21 +8,21 @@
                                       <form class='form-horizontal'>
                                           <!-- Username -->
                                           <div class='control-group'>
-                                            <label class='control-label' for='username'>Username</label>
+                                            <label class='control-label' for='username' style='width:100px;'>Customer Name</label>
                                             <div class='controls'>
-                                              <input type='text' class='input-large' id='username' name='username'>
+                                              <input type='text' class='input-large' id='username' name='name'>
                                             </div>
                                           </div>
                                           <!-- Password -->
                                           <div class='control-group'>
-                                            <label class='control-label' for='email'>Password</label>
+                                            <label class='control-label' for='email' style='width:100px;'>Password </label>
                                             <div class='controls'>
                                               <input type='password' class='input-large' id='password'name='password'>
                                             </div>
                                           </div>
                                           
                                       </form>
-                                             Don't have Account? <a href='http://vsale/index.php/customer/register'>Register</a>
+                                             Don't have Account? <a href='/index.php/customer/register'>Register</a>
                                     </div> 
                                   </div>        
 

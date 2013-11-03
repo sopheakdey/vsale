@@ -1,5 +1,5 @@
  $(document).ready(function(){   
-     var url='http://vsale/index.php/customer/login';
+     var url='/index.php/customer/login';
    $('.order-now').click(function(){
              $('#myModal').modal('show');
                 $(".modal-body").load(url);
