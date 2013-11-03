@@ -22,7 +22,7 @@
                                           </div>
                                           
                                       </form>
-                                             Don't have Account? <a href='http://vsale/index.php/customerregister'>Register</a>
+                                             Don't have Account? <a href='http://vsale/index.php/customer/register'>Register</a>
                                     </div> 
                                   </div>        
 

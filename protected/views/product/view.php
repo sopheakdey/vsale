@@ -36,8 +36,8 @@
                                  
                                 </div>
                                 <div class='modal-footer'>
-                                  <a href='#' class='btn'>Close</a>
-                                  <a href='#' class='btn btn-primary'>Save changes</a>
+                                  <a href='#' class='btn close'>Close</a>
+                                  <a href='#' class='btn customer-login'>Log In</a>
                                 </div>
                               </div>
                   </div>

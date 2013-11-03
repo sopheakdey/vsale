@@ -139,7 +139,7 @@
 				array('label'=>'Contact', 'url'=>array('/site/contactus'),
                                     'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Shop Now', 'url'=>array('/customerRegister'), 
+				array('label'=>'Shop Now', 'url'=>array('/customer/Register'), 
                                     'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),
@@ -177,12 +177,13 @@
 
                   <p class="bviolet">
                     <!-- Heading -->
-                    <span class="das-head">Amazing Theme Ever</span><br />
+                             <span class="das-head">iPhone</span><br />
                     <!-- Para -->
-                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove,  the subline of her own road, the Line Lane.
+                    iPhone 5s is purposefully imagined. Meticulously considered. Precision crafted. 
+                    It’s not just a product of what’s technologically possible. But what’s technologically useful.
                     <br />
                     <!-- Link -->
-                    <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
+                    <a class="das-link btn" href="/index.php/category/view/1">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
                   <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/1.png" alt="image01" /></div>
@@ -194,11 +195,13 @@
 
                   <p class="bblue">
                     <!-- Heading -->
-                    <span class="das-head">Based On Metro Interface</span><br />
+                    <span class="das-head">Sumsung</span><br />
                     <!-- Para -->
-                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove,  the subline of her own road, the Line Lane.
+                    Make your life richer, simpler, and more fun. As a real life companion, the new Samsung GALAXY S4 helps bring us
+closer and captures those fun moments when we are together.        
                     <br />
-                    <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
+                    
+                    <a class="das-link btn" href="/index.php/category/view/2">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
                   <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/2.png" alt="image01" /></div>
@@ -208,11 +211,11 @@
 
                   <p class="bgreen">
                     <!-- Heading -->
-                    <span class="das-head">Tons Of Features</span><br />
+                    <span class="das-head">Nokia Lumia</span><br />
                     <!-- Para -->
-                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove,  the subline of her own road, the Line Lane.
+                   The Nokia Lumia 1020 is a phone we’ve been anticipating for a long time. It’s a Windows Phone 8 mobile that uses similar camera tech to the Nokia 808 PureView. That phone had an incredible camera, but was bought by
                     <br />
-                    <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
+                    <a class="das-link btn" href="/index.php/category/view/3">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
                   <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/3.png" alt="image01" /></div>
@@ -222,11 +225,11 @@
 
                   <p class="bred">
                     <!-- Heading -->
-                    <span class="das-head">All In One Theme</span><br />
+                    <span class="das-head">Sony Xperia</span><br />
                     <!-- Para -->
-                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove,  the subline of her own road, the Line Lane.
+                    Sony Xperia is a phone we’ve been anticipating for a long time. It’s an Android 4.2 mobile that uses high quality camera PureView. 
                     <br />
-                    <a class="das-link btn">Read More <i class="icon-double-angle-right"></i></a>
+                    <a class="das-link btn" href="/index.php/category/view/4">Read More <i class="icon-double-angle-right"></i></a>
                   </p>
                   <!-- Image -->
                   <div class="da-img"><img src="<?php $webroot?>/template/img/parallax/4.png" alt="image01" /></div>

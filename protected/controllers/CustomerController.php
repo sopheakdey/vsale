@@ -1,6 +1,6 @@
 <?php
 
-class CustomerLoginController extends Controller
+class CustomerController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,6 +28,10 @@ class CustomerLoginController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
+				'users'=>array('*'),
+			),
+                    	array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('login','register'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -61,14 +65,14 @@ class CustomerLoginController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new CustomerLogin;
+		$model=new Customer;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['CustomerLogin']))
+		if(isset($_POST['Customer']))
 		{
-			$model->attributes=$_POST['CustomerLogin'];
+			$model->attributes=$_POST['Customer'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->cus_id));
 		}
@@ -90,9 +94,9 @@ class CustomerLoginController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['CustomerLogin']))
+		if(isset($_POST['Customer']))
 		{
-			$model->attributes=$_POST['CustomerLogin'];
+			$model->attributes=$_POST['Customer'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->cus_id));
 		}
@@ -127,8 +131,7 @@ class CustomerLoginController extends Controller
 	 */
 	public function actionIndex()
 	{
-                $this->layout=false;
-		$dataProvider=new CActiveDataProvider('CustomerLogin');
+		$dataProvider=new CActiveDataProvider('Customer');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -139,10 +142,10 @@ class CustomerLoginController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new CustomerLogin('search');
+		$model=new Customer('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['CustomerLogin']))
-			$model->attributes=$_GET['CustomerLogin'];
+		if(isset($_GET['Customer']))
+			$model->attributes=$_GET['Customer'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -156,7 +159,7 @@ class CustomerLoginController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=CustomerLogin::model()->findByPk($id);
+		$model=Customer::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -168,10 +171,18 @@ class CustomerLoginController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='customer-login-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='customer-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
+        public function actionLogin(){
+            $this->layout=false;
+            $this->render('login');
+          
+        }
+         public function actionRegister(){
+            $this->render('register');
+        }
 }

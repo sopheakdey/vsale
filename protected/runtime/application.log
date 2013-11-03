@@ -1368,6 +1368,67 @@ Stack trace:
 REQUEST_URI=/index.php/category/view/img/favicon/favicon.png
 in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\CategoryController.php (54)
 in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+<<<<<<< HEAD
+2013/10/30 13:50:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 .
+in C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php (17)
+in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php (129)
+in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/30 13:50:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 ' in C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php(17): CDbCommand->queryAll()
+#2 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(126): require('C:\Users\peann\...')
+#3 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\peann\...', NULL, true)
+#4 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\peann\...', NULL, true)
+#5 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php(129): CController->render('index')
+#7 C:\Users\peann\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#8 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#18 C:\Users\peann\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\Users\peann\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/product
+HTTP_REFERER=http://vsale:81/index.php
+---
+2013/10/30 13:50:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 .
+in C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php (17)
+in C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php (129)
+in C:\Users\peann\Documents\GitHub\vsale\index.php (13)
+2013/10/30 13:50:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vsale.tbl_product_type' doesn't exist. The SQL statement executed was: select pro_id,cat_name,item,unit_price,photo, (CASE WHEN new_arrival=1 then '/images/newarrivaltxt.gif' ELSE '/images/new.jpg' END) as new_arrival from tbl_product p inner  join (tbl_category c INNER JOIN tbl_product_type pt ON c.type_id=pt.type_id)on c.cat_id=p.cat_id WHERE p.cat_id=1 and pt.type_id=1  ORDER BY (pro_id) DESC   limit 4 ' in C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\Users\peann\Documents\GitHub\yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\Users\peann\Documents\GitHub\vsale\protected\views\product\index.php(17): CDbCommand->queryAll()
+#2 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(126): require('C:\Users\peann\...')
+#3 C:\Users\peann\Documents\GitHub\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\peann\...', NULL, true)
+#4 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\peann\...', NULL, true)
+#5 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\Users\peann\Documents\GitHub\vsale\protected\controllers\ProductController.php(129): CController->render('index')
+#7 C:\Users\peann\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#8 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\peann\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\peann\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\Users\peann\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#18 C:\Users\peann\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\Users\peann\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/product
+---
+=======
 2013/10/31 11:56:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "çontactus".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:878
 Stack trace:
 #0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('??ontactus', NULL, true)
@@ -1823,6 +1884,7 @@ Stack trace:
 REQUEST_URI=/index.php/product/view/images/bg_header.gif
 in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
 in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+<<<<<<< HEAD
 2013/11/01 12:22:20 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
 Stack trace:
 #0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
@@ -2104,4 +2166,835 @@ Stack trace:
 REQUEST_URI=/index.php/customerlogin
 in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customerLogin\index.php (2)
 in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerLoginController.php (134)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+=======
+>>>>>>> 103b064206f704fe97b62085db624ca0cfc27727
+>>>>>>> 859e731f01d50712d0758bfcefaf90c99458ff96
+2013/11/03 02:56:09 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:17:05 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:18:06 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:20:23 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:21:29 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:22:13 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:56:47 [error] [php] Undefined variable: dataProvider (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\index.php:15)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(7): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionIndex()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(286): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/Customer
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\index.php (15)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (7)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 03:58:07 [error] [exception.CException] exception 'CException' with message 'CustomerController cannot find the requested view "index".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(133): CController->render('index', Array)
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionIndex()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/customer
+HTTP_REFERER=http://vsale/index.php/gii/bootstrap
+---
+2013/11/03 04:01:42 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerlogin".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerlogin')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerlogin
+HTTP_REFERER=http://vsale/index.php/product/view/22
+---
+2013/11/03 04:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customer/login')
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/customer/login
+---
+2013/11/03 04:06:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerlogin".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerlogin')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerlogin
+HTTP_REFERER=http://vsale/index.php/product/view/43
+---
+2013/11/03 04:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerlogin".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerlogin')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerlogin
+HTTP_REFERER=http://vsale/index.php/product/view/43
+---
+2013/11/03 04:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerlogin".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerlogin')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerlogin
+HTTP_REFERER=http://vsale/index.php/product/view/43
+---
+2013/11/03 04:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerlogin".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerlogin')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerlogin
+HTTP_REFERER=http://vsale/index.php/product/view/43
+---
+2013/11/03 04:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/index.php/product/view/43
+---
+2013/11/03 04:26:16 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:56:19 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:56:21 [error] [php] Undefined variable: _get (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:182)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:56:28 [error] [php] Undefined variable: _get (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:182)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:58:11 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 04:58:14 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:182)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 05:05:36 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:182)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 05:05:37 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:182)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 05:06:30 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 05:11:20 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:183)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (183)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 05:11:52 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:183)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (183)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/
+---
+2013/11/03 09:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/index.php/customerRegister
+---
+2013/11/03 09:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/11/03 09:30:59 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:31:01 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php:183)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (183)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:41:09 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:41:26 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:42:42 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:43:30 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:44:15 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:44:32 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:48:32 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:49:23 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:50:42 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:51:05 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:52:15 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:56:30 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerregister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerregiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerregister
+HTTP_REFERER=http://vsale/index.php/product/view/42
+---
+2013/11/03 09:58:01 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 09:59:31 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 10:03:08 [error] [php] Undefined index: username (C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php:2)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(869): CustomerController->renderFile()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(782): CustomerController->renderPartial()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php(182): CustomerController->render()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\actions\CInlineAction.php(49): CustomerController->actionLogin()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): CustomerController->runAction()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): CustomerController->filterAccessControl()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#12 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): CustomerController->run()
+#13 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/customer/login
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\views\customer\login.php (2)
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\CustomerController.php (182)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 10:04:18 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 10:04:27 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 10:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/index.php/site/contactus
+---
+2013/11/03 10:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customerRegister".' in C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customerRegiste...')
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/customerRegister
+HTTP_REFERER=http://vsale/index.php/customer/Register
+---
+2013/11/03 10:10:48 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
+in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)
+2013/11/03 10:14:32 [error] [php] Undefined index: id (C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php:53)
+Stack trace:
+#0 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#1 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 C:\Users\Notebook\Documents\GitHub\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Users\Notebook\Documents\GitHub\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Notebook\Documents\GitHub\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Users\Notebook\Documents\GitHub\vsale\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/product/view/images/bg_header.gif
+in C:\Users\Notebook\Documents\GitHub\vsale\protected\controllers\ProductController.php (53)
 in C:\Users\Notebook\Documents\GitHub\vsale\index.php (13)

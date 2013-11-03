@@ -139,7 +139,7 @@
 				array('label'=>'Contact', 'url'=>array('/site/contactus'),
                                     'linkOptions'=> array('class' => 'borange bg-contact'),
                                     ),
-				array('label'=>'Shop Now', 'url'=>array('/customerRegister'), 
+				array('label'=>'Shop Now', 'url'=>array('/customer/Register'), 
                                     'linkOptions'=> array('class' => 'bblue bg-shop'),
                                     'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),

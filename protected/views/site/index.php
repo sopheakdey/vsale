@@ -23,8 +23,7 @@ $this->pageTitle='Vsale Phone Shop';
 As a real life companion, the new Samsung GALAXY S4 helps bring us
 closer and captures those fun moments when we are together.
 Each feature was designed to simplify our daily lives.
-Furthermore, it cares enough to monitor our health and well-being.
-To put it simply, the Samsung GALAXY S4 is there for you . . .
+Furthermore, it cares enough to monitor our health and well-being. The Samsung GALAXY S4 is there for you . . .
           <div class="btn btn-inverse">
                                     <inpu type'hidden'="" name="id" id="id" value="202">
                                     <a href="/index.php/category/view/2" title="More Details">More Details</a>  
@@ -34,7 +33,7 @@ To put it simply, the Samsung GALAXY S4 is there for you . . .
             <td style="height: 250px;">
              <div class="pic">
                  <a href="/index.php/product/view/203" title="More Details">
-                     <img src="/images/samsung-galaxy-s4.jpg" alt="/images/samsung-galaxy-s4.jpg"></a>
+                     <img src="/images/samsung-galaxy-s4.jpg" alt="/images/samsung-galaxy-s4.jpg" style="width:1120px;"></a>
                  
              </div></td>             
      </tr>
