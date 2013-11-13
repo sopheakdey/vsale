@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yii='C:\Users\sopheakdey heng\Documents\GitHub\yii\framework\yii.php';
+$yii='C:\Users\sopheakdey\Documents\GitHub\yii\framework\yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
 // remove the following lines when in production mode
